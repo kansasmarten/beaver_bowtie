@@ -145,3 +145,17 @@ em {
     padding: 1rem;
   }
 }
+
+/* Collapsible details styling */
+details {
+  margin-bottom: 1rem;
+}
+summary {
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+details summary::-webkit-details-marker {
+  font-size: 1.3rem;
+}

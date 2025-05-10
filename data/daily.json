@@ -1,17 +1,57 @@
 [
-    {
-      "category": "Around the House",
-      "entries": [
-        {
-          "title": "Morning Blessing",
-          "prayer": "O Lord, grant me grace…",
-          "scriptureRef": "Psalm 5:3",
-          "verse": "O LORD, in the morning you hear my voice…"
-        }
-      ]
-    },
-    {
-      "category": "At Work",
-      "entries": [ ]
-    }
-  ]
+  {
+    "category": "Around the House",
+    "entries": [
+      {
+        "title": "Entering Home",
+        "prayer": "Heavenly Father, bless this dwelling and all who enter.",
+        "devotionalQuestion": "How have I experienced God's hospitality today?",
+        "scriptureRef": "Joshua 24:15",
+        "verse": "…as for me and my house, we will serve the LORD."
+      },
+      {
+        "title": "Before Meals",
+        "prayer": "Lord Jesus, bless us and these your gifts, which we are about to receive from your bounty.",
+        "devotionalQuestion": "Do I recognize God’s provision in each meal?",
+        "scriptureRef": "1 Corinthians 10:31",
+        "verse": "So, whether you eat or drink, or whatever you do, do all to the glory of God."
+      }
+    ]
+  },
+  {
+    "category": "At Work",
+    "entries": [
+      {
+        "title": "Starting Work",
+        "prayer": "O Lord, grant me diligence and integrity in all I do today.",
+        "devotionalQuestion": "Am I working heartily as for the Lord?",
+        "scriptureRef": "Colossians 3:23",
+        "verse": "Whatever you do, work heartily, as for the Lord and not for men."
+      }
+    ]
+  },
+  {
+    "category": "For School",
+    "entries": [
+      {
+        "title": "Before Studying",
+        "prayer": "Gracious God, grant me wisdom and understanding as I study.",
+        "devotionalQuestion": "Have I sought Your wisdom before pursuing knowledge?",
+        "scriptureRef": "Proverbs 2:6",
+        "verse": "For the Lord gives wisdom; from his mouth come knowledge and understanding."
+      }
+    ]
+  },
+  {
+    "category": "While Doing Yard Work",
+    "entries": [
+      {
+        "title": "Starting Yard Work",
+        "prayer": "Creator God, thank You for the beauty of Your creation as I labor.",
+        "devotionalQuestion": "In what ways do I see God’s hand in creation today?",
+        "scriptureRef": "Psalm 65:9",
+        "verse": "You visit the earth and water it; you greatly enrich it; the river of God is full of water."
+      }
+    ]
+  }
+]

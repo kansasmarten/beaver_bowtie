@@ -1,75 +1,47 @@
-
-
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
   const contentEl = document.getElementById('content');
-  let dataUrl;
   const page = window.location.pathname.split('/').pop();
+  let dataUrl = 'data/daily.json';
+  if (page === 'chaplain.html') dataUrl = 'data/chaplain.json';
+  if (page === 'collects.html') dataUrl = 'data/collects.json';
 
-  // Determine which JSON data to load based on current page
-  if (page === '' || page === 'index.html') {
-    dataUrl = 'data/daily.json';
-  } else if (page === 'chaplain.html') {
-    dataUrl = 'data/chaplain.json';
-  } else if (page === 'collects.html') {
-    dataUrl = 'data/collects.json';
-  } else {
-    console.error('Unknown page:', page);
-    contentEl.innerHTML = '<p>Sorry, cannot determine content to load.</p>';
-    return;
-  }
-
-  // Fetch and render the JSON data
   fetch(dataUrl)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`HTTP error ${response.status}`);
-      }
-      return response.json();
-    })
+    .then(res => res.json())
     .then(data => {
       data.forEach(category => {
-        // Create section for each category
-        const section = document.createElement('section');
-        const heading = document.createElement('h2');
-        heading.textContent = category.category;
-        section.appendChild(heading);
-
-        const list = document.createElement('ul');
+        const catDetails = document.createElement('details');
+        const catSummary = document.createElement('summary');
+        catSummary.textContent = category.category;
+        catDetails.appendChild(catSummary);
 
         category.entries.forEach(entry => {
-          const item = document.createElement('li');
-          const title = document.createElement('strong');
-          title.textContent = entry.title;
-          item.appendChild(title);
+          const entryDetails = document.createElement('details');
+          entryDetails.style.marginLeft = '1rem';
 
-          // Line break
-          item.appendChild(document.createElement('br'));
+          const entrySummary = document.createElement('summary');
+          entrySummary.textContent = entry.title;
+          entryDetails.appendChild(entrySummary);
 
-          // Scripture reference and verse
-          if (entry.scriptureRef && entry.verse) {
-            const scripture = document.createElement('em');
-            scripture.textContent = `${entry.scriptureRef}: `;
-            item.appendChild(scripture);
-            item.appendChild(document.createTextNode(entry.verse));
-            item.appendChild(document.createElement('br'));
-          }
+          const prayerP = document.createElement('p');
+          prayerP.innerHTML = `<strong>Prayer:</strong> ${entry.prayer}`;
+          entryDetails.appendChild(prayerP);
 
-          // Prayer text
-          if (entry.prayer) {
-            const prayerPara = document.createElement('p');
-            prayerPara.textContent = entry.prayer;
-            item.appendChild(prayerPara);
-          }
+          const devotionP = document.createElement('p');
+          devotionP.innerHTML = `<strong>Devotional Question:</strong> ${entry.devotionalQuestion}`;
+          entryDetails.appendChild(devotionP);
 
-          list.appendChild(item);
+          const scriptureP = document.createElement('p');
+          scriptureP.innerHTML = `<strong>Scripture (${entry.scriptureRef}, ESV):</strong> ${entry.verse}`;
+          entryDetails.appendChild(scriptureP);
+
+          catDetails.appendChild(entryDetails);
         });
 
-        section.appendChild(list);
-        contentEl.appendChild(section);
+        contentEl.appendChild(catDetails);
       });
     })
     .catch(err => {
-      console.error('Error loading data:', err);
-      contentEl.innerHTML = '<p>Sorry, unable to load content at this time.</p>';
+      console.error(err);
+      contentEl.textContent = 'Could not load content.';
     });
 });
