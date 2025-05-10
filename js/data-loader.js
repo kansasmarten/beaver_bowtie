@@ -9,35 +9,61 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(res => res.json())
     .then(data => {
       data.forEach(category => {
-        const catDetails = document.createElement('details');
-        const catSummary = document.createElement('summary');
-        catSummary.textContent = category.category;
-        catDetails.appendChild(catSummary);
+        // Category container
+        const catDiv = document.createElement('div');
+        catDiv.classList.add('category');
+
+        // Category header
+        const catHeader = document.createElement('h2');
+        catHeader.textContent = category.category;
+        catHeader.classList.add('category-header');
+        catDiv.appendChild(catHeader);
+
+        // Category content (entries)
+        const catContent = document.createElement('div');
+        catContent.classList.add('category-content');
+        catContent.style.display = 'none';
 
         category.entries.forEach(entry => {
-          const entryDetails = document.createElement('details');
-          entryDetails.style.marginLeft = '1rem';
+          // Entry container
+          const entryDiv = document.createElement('div');
+          entryDiv.classList.add('entry');
 
-          const entrySummary = document.createElement('summary');
-          entrySummary.textContent = entry.title;
-          entryDetails.appendChild(entrySummary);
+          // Entry header
+          const entryHeader = document.createElement('h3');
+          entryHeader.textContent = entry.title;
+          entryHeader.classList.add('entry-header');
+          entryDiv.appendChild(entryHeader);
 
-          const prayerP = document.createElement('p');
-          prayerP.innerHTML = `<strong>Prayer:</strong> ${entry.prayer}`;
-          entryDetails.appendChild(prayerP);
+          // Entry content
+          const entryContent = document.createElement('div');
+          entryContent.classList.add('entry-content');
+          entryContent.style.display = 'none';
+          entryContent.innerHTML = `
+            <p><strong>Prayer:</strong> ${entry.prayer}</p>
+            <p><strong>Devotional Question:</strong> ${entry.devotionalQuestion}</p>
+            <p><strong>Scripture (${entry.scriptureRef}, ESV):</strong> ${entry.verse}</p>
+          `;
+          entryDiv.appendChild(entryContent);
 
-          const devotionP = document.createElement('p');
-          devotionP.innerHTML = `<strong>Devotional Question:</strong> ${entry.devotionalQuestion}`;
-          entryDetails.appendChild(devotionP);
+          // Toggle entry content on header click
+          entryHeader.addEventListener('click', () => {
+            entryContent.style.display =
+              entryContent.style.display === 'none' ? 'block' : 'none';
+          });
 
-          const scriptureP = document.createElement('p');
-          scriptureP.innerHTML = `<strong>Scripture (${entry.scriptureRef}, ESV):</strong> ${entry.verse}`;
-          entryDetails.appendChild(scriptureP);
-
-          catDetails.appendChild(entryDetails);
+          catContent.appendChild(entryDiv);
         });
 
-        contentEl.appendChild(catDetails);
+        catDiv.appendChild(catContent);
+
+        // Toggle category content on header click
+        catHeader.addEventListener('click', () => {
+          catContent.style.display =
+            catContent.style.display === 'none' ? 'block' : 'none';
+        });
+
+        contentEl.appendChild(catDiv);
       });
     })
     .catch(err => {

@@ -146,16 +146,39 @@ em {
   }
 }
 
-/* Collapsible details styling */
-details {
+
+/* Category styling */
+.category {
+  margin-bottom: 2rem;
+}
+.category-header {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.8rem;
+  color: #2a3d66;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+/* Entries container */
+.category-content {
+  margin-left: 1rem;
+}
+
+/* Entry styling */
+.entry {
   margin-bottom: 1rem;
 }
-summary {
+.entry-header {
   font-size: 1.3rem;
   font-weight: 600;
+  color: #333;
   cursor: pointer;
-  padding: 0.5rem 0;
+  margin-bottom: 0.5rem;
 }
-details summary::-webkit-details-marker {
-  font-size: 1.3rem;
+.entry-content {
+  margin-left: 1rem;
+  border-left: 2px solid #eee;
+  padding-left: 1rem;
 }

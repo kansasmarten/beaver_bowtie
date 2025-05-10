@@ -1,56 +1,236 @@
 [
   {
-    "category": "Around the House",
+    "category": "Household",
     "entries": [
       {
-        "title": "Entering Home",
-        "prayer": "Heavenly Father, bless this dwelling and all who enter.",
-        "devotionalQuestion": "How have I experienced God's hospitality today?",
+        "title": "Preparing Meals (Cooking Dinner)",
+        "devotionalQuestion": "How can preparing a meal become an act of love and gratitude in my home, remembering God’s provision for our daily needs?",
+        "prayer": "Heavenly Father, thank You for the food you provide each day. As I prepare this meal, nourish us not only with this food but also with your presence, and help me serve with a thankful heart; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "1 Corinthians 10:31",
+        "verse": "So, whether you eat or drink, or whatever you do, do all to the glory of God."
+      },
+      {
+        "title": "Washing Dishes after a Meal",
+        "devotionalQuestion": "In what ways can I use the humble chore of washing dishes to cultivate a servant’s heart and thank God for the meal we enjoyed?",
+        "prayer": "Lord Jesus, who came not to be served but to serve, give me a humble and grateful heart as I wash these dishes. Help me to remember that no act of care is too small in Your sight, and let me offer this simple service without grumbling, as unto You; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "John 13:14",
+        "verse": "If I then, your Lord and Teacher, have washed your feet, you also ought to wash one another's feet."
+      },
+      {
+        "title": "Cleaning the House (Tidying Up)",
+        "devotionalQuestion": "How can tidying and cleaning my home become an act of gratitude and stewardship for the space God has entrusted to me?",
+        "prayer": "Gracious God, thank You for the home You have provided. As I clean and put things in order, fill me with gratitude for your blessings and the responsibility to care for them. Make our home a place of peace and welcome, where Your love can be felt by all who enter; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "Proverbs 31:27",
+        "verse": "She looks well to the ways of her household and does not eat the bread of idleness."
+      },
+      {
+        "title": "Doing Laundry (Washing Clothes)",
+        "devotionalQuestion": "As I wash and fold these clothes, how can I remember the way God cleanses and renews us, and offer a prayer of blessing for those who will wear them?",
+        "prayer": "Merciful Lord, even as water and soap cleanse these garments, You cleanse our hearts from sin. Thank You for providing clothes for us. As I do this laundry, wash me anew in Your grace and help me to prayerfully bless those who will wear these clothes. Clothe us with the virtues of compassion and humility, and keep us ever mindful of Your cleansing love; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "Psalm 51:7",
+        "verse": "Purge me with hyssop, and I shall be clean; wash me, and I shall be whiter than snow."
+      },
+      {
+        "title": "Yard Work or Gardening",
+        "devotionalQuestion": "What can pulling weeds and tending my yard or garden teach me about caring for God’s creation and rooting out sin to cultivate spiritual growth in my life?",
+        "prayer": "Lord of creation, thank You for the beauty of the earth. As I mow, weed, or plant in my yard, give me wisdom to care for this piece of Your creation. Uproot the weeds of sin in my heart and help me grow in patience and grace, just as the plants grow under Your care. May my labor bear fruit in a well-tended garden and a life that honors You; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "1 Corinthians 3:7",
+        "verse": "So neither he who plants nor he who waters is anything, but only God who gives the growth."
+      },
+      {
+        "title": "Grocery Shopping (Running Errands)",
+        "devotionalQuestion": "How can I turn even a trip to the store into an act of gratitude and trust, relying on God’s provision and remembering to share with those in need?",
+        "prayer": "Provider God, thank You for supplying our daily needs. As I shop for my household, keep me mindful of Your faithful provision and give me a grateful heart. Help me to be wise and content, avoiding worry about tomorrow. Make me generous toward others who have less, that I might use the blessings You give to bless others; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "Philippians 4:19",
+        "verse": "And my God will supply every need of yours according to his riches in glory in Christ Jesus."
+      }
+    ]
+  },
+  {
+    "category": "Work/School",
+    "entries": [
+      {
+        "title": "Commuting to Work or School",
+        "devotionalQuestion": "How can I use my daily commute as a time to seek God’s presence and guidance, preparing my heart for the day ahead?",
+        "prayer": "O God, who is with us wherever we go, watch over me as I travel today. Keep me safe on my way and grant me peace in the journey. Help me to use this commute to draw near to You – turning my thoughts to prayer and praise – so that I am ready to serve You and others throughout the day; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "Psalm 121:8",
+        "verse": "The LORD will keep your going out and your coming in from this time forth and forevermore."
+      },
+      {
+        "title": "Working Diligently at My Job",
+        "devotionalQuestion": "How can I remember that I ultimately work for the Lord, and let that perspective shape how I approach even the routine tasks of my job each day?",
+        "prayer": "Almighty God, thank You for the work You have given me. Grant me diligence and integrity in all my tasks today. Help me to work with all my heart, as serving You and not just others, so that my labor may honor Your Name and benefit those around me; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "Colossians 3:23",
+        "verse": "Whatever you do, work heartily, as for the Lord and not for men."
+      },
+      {
+        "title": "Collaborating with Co-workers",
+        "devotionalQuestion": "When I’m working with others on a team, how can I practice humility, patience, and love so that Christ’s character is seen in the way I collaborate with my colleagues?",
+        "prayer": "Lord, You call us to love our neighbors as ourselves. Help me to be patient, humble, and kind when working with my co-workers. Teach me to value their contributions and listen well. May we work together with respect and unity, that our teamwork would reflect Your love and accomplish good purposes; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "Philippians 2:3",
+        "verse": "Do nothing from selfish ambition or conceit, but in humility count others more significant than yourselves."
+      },
+      {
+        "title": "Facing a Difficult Task or Deadline",
+        "devotionalQuestion": "When I face a stressful deadline or a difficult task at work, how can I rely on God for strength and wisdom instead of giving in to anxiety or frustration?",
+        "prayer": "Heavenly Father, You know the challenges I face in my work. When I feel overwhelmed by heavy tasks or deadlines, calm my mind and steady my heart. Grant me Your wisdom and strength to do my work well, and help me to trust that You are with me in every challenge. Let Your peace guard me from anxiety as I commit my efforts to You; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "Proverbs 16:3",
+        "verse": "Commit your work to the LORD, and your plans will be established."
+      },
+      {
+        "title": "Learning at School (Attending Class)",
+        "devotionalQuestion": "How can being attentive and eager to learn in school be a way of honoring God and thanking Him for the opportunity to gain knowledge?",
+        "prayer": "God of wisdom, thank You for the gift of education. As I sit in class, help me to listen attentively and respect my teachers. Give me a love of learning and a humble mind, remembering that all truth is from You. May my efforts in school honor You, and may I grow in knowledge and character to Your glory; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "Proverbs 1:7",
+        "verse": "The fear of the LORD is the beginning of knowledge; fools despise wisdom and instruction."
+      },
+      {
+        "title": "Doing Homework or Studying",
+        "devotionalQuestion": "In what ways can I practice diligence and honesty in my homework, offering my best effort to God and asking for His help when I am struggling?",
+        "prayer": "Lord, thank You for the chance to learn and grow. When I sit down to study, give me focus and integrity. Help me not to procrastinate or cut corners, but to do my work wholeheartedly. And when I don’t understand or feel frustrated, remind me to ask You for wisdom and perseverance. Let my studies be an offering to You, done in gratitude for the abilities and opportunity You’ve provided; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "James 1:5",
+        "verse": "If any of you lacks wisdom, let him ask God, who gives generously to all without reproach, and it will be given him."
+      }
+    ]
+  },
+  {
+    "category": "Childcare",
+    "entries": [
+      {
+        "title": "Morning Routine with Children",
+        "devotionalQuestion": "How can I show God’s love and patience during the busy morning routine with my children, treating each new day as a gift from the Lord rather than a source of stress?",
+        "prayer": "Dear Lord, our mornings can be rushed and chaotic. Please fill me with Your peace and patience as I help my children start the day. Keep me from harsh words and hurried anxiety. Instead, let us begin each day with gratitude and kindness, remembering that this is the day You have made and You are with us in it; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "Psalm 118:24",
+        "verse": "This is the day that the LORD has made; let us rejoice and be glad in it."
+      },
+      {
+        "title": "Driving Children to School or Events",
+        "devotionalQuestion": "During the drive with my children, how can I use that time to encourage them and entrust their day to God, rather than just hurrying from place to place?",
+        "prayer": "Heavenly Father, watch over us as we drive to our destination. Thank You for this little window of time together. Help me to speak words of encouragement and blessing to my children as we travel. We invite You into our conversation and ask Your protection on the road. As we go, we commit the day’s activities to You and trust You to guide us in all we do; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "Deuteronomy 6:7",
+        "verse": "You shall teach them diligently to your children, and shall talk of them when you sit in your house, and when you walk by the way..."
+      },
+      {
+        "title": "Helping with Children’s Homework",
+        "devotionalQuestion": "How can I reflect God’s patience and guidance when I help my child with homework, turning a potentially frustrating time into one of growth and support?",
+        "prayer": "Gracious God, as I sit with my child to help with homework, give me a calm and patient spirit. Grant me understanding to explain things clearly and patience when progress is slow. Keep me from anger or frustration, and let my words build up rather than tear down. May this time strengthen my child’s confidence and remind us both that You are the source of all wisdom and knowledge; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "Ephesians 6:4",
+        "verse": "Fathers, do not provoke your children to anger, but bring them up in the discipline and instruction of the Lord."
+      },
+      {
+        "title": "Playing with Children (Quality Time)",
+        "devotionalQuestion": "What can I learn about God’s joy and love by taking time to play and laugh with my children, being fully present with them in these moments?",
+        "prayer": "Lord Jesus, You welcomed little children and took joy in them. Thank You for the gift of play and laughter with my kids. Help me to be fully present with a joyful heart. In our games and imagination, remind me that Your Kingdom belongs to the childlike. May our fun times together overflow with love and reflect a bit of Your delight in us; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "Matthew 19:14",
+        "verse": "But Jesus said, 'Let the little children come to me and do not hinder them, for to such belongs the kingdom of heaven.'"
+      },
+      {
+        "title": "Disciplining or Guiding Children",
+        "devotionalQuestion": "How can I mirror God’s fatherly love and wisdom when I need to correct my child, making sure my discipline is done with love and not anger?",
+        "prayer": "Father in heaven, You discipline those You love for our good. When I must correct my child, help me do so with gentleness and self-control. Give me wisdom to teach and set boundaries in love, not in anger. May my child understand that they are loved even in correction, and may my guidance lead them in the right path, as You gently guide me; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "Proverbs 22:6",
+        "verse": "Train up a child in the way he should go; even when he is old he will not depart from it."
+      },
+      {
+        "title": "Bedtime Routine (Prayer and Comfort)",
+        "devotionalQuestion": "How can I make my children’s bedtime a peaceful, sacred moment to thank God for the day and trust Him for protection through the night?",
+        "prayer": "Dear Lord, as the day comes to a close, help our family to draw near to You. Calm our children’s hearts as we prepare for bed. May we end the day with prayers, thanking You for all the blessings we received. Grant a peaceful night’s rest under Your watchful care, for You alone make us dwell in safety. Keep us in Your loving arms until the morning light; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "Psalm 4:8",
+        "verse": "In peace I will both lie down and sleep; for you alone, O LORD, make me dwell in safety."
+      }
+    ]
+  },
+  {
+    "category": "Recreation",
+    "entries": [
+      {
+        "title": "Exercising or Playing Sports",
+        "devotionalQuestion": "In what ways can taking care of my body through exercise be an act of honoring God, and what spiritual lessons of discipline or perseverance can I learn from it?",
+        "prayer": "Lord, thank You for the gift of health and the ability to move. As I exercise (or play sports), help me remember that my body is a temple of Your Holy Spirit. Give me discipline to care for my health and protect me from injury. Teach me perseverance through physical training, and remind me that ultimately I run the race of life looking to You for strength; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "1 Corinthians 6:19",
+        "verse": "Or do you not know that your body is a temple of the Holy Spirit within you, whom you have from God? You are not your own."
+      },
+      {
+        "title": "Enjoying a Hobby or Creative Activity",
+        "devotionalQuestion": "How might pursuing my hobby or creative interest reflect the creativity and joy of God, and how can I thank Him for the gift of this enjoyment and skill?",
+        "prayer": "Creator God, thank You for the hobbies and creative interests that enrich my life. Whether I am making art, making music, or enjoying a favorite pastime, I recognize that every good and perfect gift comes from You. Please use these activities to refresh my spirit and even to bless others. In my creativity and play, let me sense Your pleasure and give You thanks for the joy it brings; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "James 1:17",
+        "verse": "Every good gift and every perfect gift is from above, coming down from the Father of lights with whom there is no variation or shadow due to change."
+      },
+      {
+        "title": "Watching TV or Entertainment",
+        "devotionalQuestion": "When I relax with TV or other entertainment, how can I be mindful to choose what is pure and edifying, keeping God first even in my leisure?",
+        "prayer": "Holy God, thank You for times of rest and enjoyment. As I watch or play for entertainment, give me discernment to choose what is wholesome and pleasing to You. Protect my heart and mind from anything unworthy. May I find refreshment without compromising my values, thinking on whatever is true, honorable, and pure. Help me to use my leisure in ways that honor You; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "Philippians 4:8",
+        "verse": "Finally, brothers, whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is commendable, if there is any excellence, if anything worthy of praise, think about these things."
+      },
+      {
+        "title": "Time in Nature (Walk or Hiking)",
+        "devotionalQuestion": "How does enjoying the outdoors help me encounter God’s glory and find peace in His creation, and how can I turn a simple walk into a time of prayer or praise?",
+        "prayer": "Lord of Creation, thank You for the beauty of the world around me. As I spend time in nature, open my eyes to see Your handiwork in every tree, flower, and sky. Still my heart as I walk, that I may know Your presence and be refreshed. Let the birdsong and breeze remind me that all creation declares Your gloria; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "Psalm 19:1",
+        "verse": "The heavens declare the glory of God, and the sky above proclaims his handiwork."
+      },
+      {
+        "title": "Spending Time with Friends",
+        "devotionalQuestion": "How can I be a blessing and a Christ-like friend when I spend time with others, treating our friendship as a gift from God?",
+        "prayer": "Gracious God, thank You for the gift of friendship. Please bless the time I spend with my friends. Help me to listen well, speak kindly, and encourage them. Teach me to love as You love, that our friendships may be strengthened. May our time together be filled with joy and mutual upbuilding, and may I reflect Your light among my friends; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "Proverbs 27:17",
+        "verse": "Iron sharpens iron, and one man sharpens another."
+      },
+      {
+        "title": "Family Game or Movie Night",
+        "devotionalQuestion": "How can our family’s fun time — whether playing games or watching a movie — become a way to bond in love and thank God for the joy we share together?",
+        "prayer": "Heavenly Father, thank You for the joy of family fun and relaxation. As we gather for a game or movie, bless our time with laughter and love. Help us to compete or interact in kindness and fairness, and to appreciate each person’s presence. May our home be filled with a cheerful heart, which is good medicine to our souls, and may we never forget that these moments are a gift from You; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "Proverbs 17:22",
+        "verse": "A joyful heart is good medicine, but a crushed spirit dries up the bones."
+      }
+    ]
+  },
+  {
+    "category": "Spiritual Life",
+    "entries": [
+      {
+        "title": "Morning Prayer or Devotion",
+        "devotionalQuestion": "Why is it important to begin my day with God, and how can I open my heart to seek His presence and guidance each morning through prayer and Scripture?",
+        "prayer": "Almighty God, thank You for the gift of a new day. As I begin this morning with prayer, tune my heart to Your voice. Help me to center my mind on Your goodness and entrust to You all that this day holds. Fill me with Your Holy Spirit now, so that in all I do today – in work or rest – I may remember Your presence and walk in Your ways; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "Mark 1:35",
+        "verse": "And rising very early in the morning, while it was still dark, he departed and went out to a desolate place, and there he prayed."
+      },
+      {
+        "title": "Reading Scripture (Bible Study)",
+        "devotionalQuestion": "When I read the Bible, how can I actively listen for God’s voice and allow His Word to shape my thinking and actions today?",
+        "prayer": "Blessed Lord, who caused all holy Scriptures to be written for our learning: Grant me so to hear them, read, mark, learn, and inwardly digest them. Open my eyes to understand Your Word and my heart to treasure it. By Your Holy Spirit, help me to apply what I read to my life today, that I may grow in faith and love; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "2 Timothy 3:16",
+        "verse": "All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness."
+      },
+      {
+        "title": "Attending Sunday Worship Service",
+        "devotionalQuestion": "How does gathering with God’s people for worship each week strengthen my faith, and how can I fully participate – receiving God’s grace and offering Him praise?",
+        "prayer": "O God, I am glad when they say, “Let us go to the house of the Lord.” Prepare my heart to worship You in spirit and truth this Sunday. As I join in the prayers, the songs, the hearing of Your Word, and the Holy Communion, meet me there and strengthen my soul. Unite me with my brothers and sisters in Christ, and send me out renewed to love and serve You in the week ahead; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "Hebrews 10:25",
+        "verse": "Not neglecting to meet together, as is the habit of some, but encouraging one another, and all the more as you see the Day drawing near."
+      },
+      {
+        "title": "Family Devotion or Prayer Time",
+        "devotionalQuestion": "What blessings come when our family prays or reads Scripture together, and how can we make our home a place where God is honored daily?",
+        "prayer": "Lord, You have placed us in families to help one another grow in faith. Bless our time of family prayer and devotion. Give us the commitment to gather together, whether around the table or before bed, to read Your Word and to pray. May Your Spirit guide our conversations and deepen our love for You and for each other. Let our home be a little church where Christ is honored in all we do and say; through Jesus Christ our Lord. Amen.",
         "scriptureRef": "Joshua 24:15",
         "verse": "…as for me and my house, we will serve the LORD."
       },
+      { 
+        "title": "Serving in Church or Community",
+        "devotionalQuestion": "How does volunteering or helping others allow me to live out my faith, and how can I serve with Christ’s love and humility rather than seeking recognition?",
+        "prayer": "Servant Lord, You taught us by example to wash one another’s feet. Thank You for the opportunity to serve at church or in my community. Give me a humble heart, seeking not praise but the good of others. Strengthen me to use the gifts You’ve given me cheerfully and faithfully. May my service shine Your light and point people to You in love; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "1 Peter 4:10",
+        "verse": "As each has received a gift, use it to serve one another, as good stewards of God's varied grace."
+      },
       {
-        "title": "Before Meals",
-        "prayer": "Lord Jesus, bless us and these your gifts, which we are about to receive from your bounty.",
-        "devotionalQuestion": "Do I recognize God’s provision in each meal?",
-        "scriptureRef": "1 Corinthians 10:31",
-        "verse": "So, whether you eat or drink, or whatever you do, do all to the glory of God."
-      }
-    ]
-  },
-  {
-    "category": "At Work",
-    "entries": [
-      {
-        "title": "Starting Work",
-        "prayer": "O Lord, grant me diligence and integrity in all I do today.",
-        "devotionalQuestion": "Am I working heartily as for the Lord?",
-        "scriptureRef": "Colossians 3:23",
-        "verse": "Whatever you do, work heartily, as for the Lord and not for men."
-      }
-    ]
-  },
-  {
-    "category": "For School",
-    "entries": [
-      {
-        "title": "Before Studying",
-        "prayer": "Gracious God, grant me wisdom and understanding as I study.",
-        "devotionalQuestion": "Have I sought Your wisdom before pursuing knowledge?",
-        "scriptureRef": "Proverbs 2:6",
-        "verse": "For the Lord gives wisdom; from his mouth come knowledge and understanding."
-      }
-    ]
-  },
-  {
-    "category": "While Doing Yard Work",
-    "entries": [
-      {
-        "title": "Starting Yard Work",
-        "prayer": "Creator God, thank You for the beauty of Your creation as I labor.",
-        "devotionalQuestion": "In what ways do I see God’s hand in creation today?",
-        "scriptureRef": "Psalm 65:9",
-        "verse": "You visit the earth and water it; you greatly enrich it; the river of God is full of water."
+        "title": "Attending a Small Group or Bible Study",
+        "devotionalQuestion": "How does meeting with a small group of believers for study and prayer build me up in Christ, and how can I encourage others in our fellowship together?",
+        "prayer": "Lord, I thank You for the community of believers. As we gather in our small group, be present in our midst. Open our hearts to share honestly and our minds to understand Your truth. Help me to both encourage and be encouraged, that together we might spur one another on toward love and good deeds. Knit us together in Your love and strengthen our faith through our fellowship; through Jesus Christ our Lord. Amen.",
+        "scriptureRef": "Matthew 18:20",
+        "verse": "For where two or three are gathered in my name, there am I among them."
       }
     ]
   }
