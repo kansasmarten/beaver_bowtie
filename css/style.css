@@ -1,0 +1,118 @@
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and typography */
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background-color: #f9f7f1;
+  color: #333333;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* Links */
+a {
+  color: #2a3d66;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+header h1 a {
+  font-family: 'EB Garamond', serif;
+  font-size: 2rem;
+  color: #2a3d66;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+nav a {
+  font-weight: bold;
+}
+
+/* Main content wrapper */
+main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Sections */
+section {
+  margin-bottom: 2rem;
+}
+section h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.5rem;
+  color: #2a3d66;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  margin-left: 1rem;
+}
+li {
+  margin-bottom: 1rem;
+}
+
+/* Entry styling */
+strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+em {
+  font-style: italic;
+}
+
+/* Search container (for collects page) */
+.search-container {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.search-container input[type="search"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #666666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  body {
+    padding: 0.5rem;
+  }
+}
