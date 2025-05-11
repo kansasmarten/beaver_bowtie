@@ -2,33 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>…Your Page Title…</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Praying Beaver</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1><a href="index.html">Your Parish Name</a></h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Daily Prayers</a></li>
-        <li><a href="chaplain.html">Chaplain Prayers</a></li>
-        <li><a href="collects.html">BCP Collects</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <h1><a href="index.html">The Praying Beaver</a></h1>
+      <nav>
+        <ul>
+          <li><b><a href="index.html" class="nav-button">Daily Prayers</a></b></li>
+          <li><a href="chaplain.html" class="nav-button">Chaplain Prayers</a></li>
+          <li><a href="collects.html" class="nav-button">BCP Collects</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main id="content">
+  <main class="container" id="content">
     <!-- page-specific sections will be injected here -->
   </main>
 
-  <footer>
-    <p></p>
+  <footer class="site-footer">
+    <div class="container">
+      <p></p>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
   <script src="js/data-loader.js"></script>
-  <!-- only on collects.html: -->
-  <!-- <script src="js/search.js"></script> -->
+  <script src="js/search.js"></script>
 </body>
 </html>

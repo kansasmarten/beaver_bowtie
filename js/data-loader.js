@@ -8,63 +8,81 @@ document.addEventListener('DOMContentLoaded', () => {
   fetch(dataUrl)
     .then(res => res.json())
     .then(data => {
-      data.forEach(category => {
-        // Category container
-        const catDiv = document.createElement('div');
-        catDiv.classList.add('category');
-
-        // Category header
-        const catHeader = document.createElement('h2');
-        catHeader.textContent = category.category;
-        catHeader.classList.add('category-header');
-        catDiv.appendChild(catHeader);
-
-        // Category content (entries)
-        const catContent = document.createElement('div');
-        catContent.classList.add('category-content');
-        catContent.style.display = 'none';
-
-        category.entries.forEach(entry => {
-          // Entry container
+      if (page === 'collects.html') {
+        data.forEach(collect => {
           const entryDiv = document.createElement('div');
           entryDiv.classList.add('entry');
 
-          // Entry header
           const entryHeader = document.createElement('h3');
-          entryHeader.textContent = entry.title;
+          entryHeader.textContent = collect.title;
           entryHeader.classList.add('entry-header');
           entryDiv.appendChild(entryHeader);
 
-          // Entry content
           const entryContent = document.createElement('div');
           entryContent.classList.add('entry-content');
           entryContent.style.display = 'none';
-          entryContent.innerHTML = `
-            <p><strong>Prayer:</strong> ${entry.prayer}</p>
-            <p><strong>Devotional Question:</strong> ${entry.devotionalQuestion}</p>
-            <p><strong>Scripture (${entry.scriptureRef}, ESV):</strong> ${entry.verse}</p>
-          `;
+          entryContent.innerHTML = `<p>${collect.collect}</p>`;
           entryDiv.appendChild(entryContent);
 
-          // Toggle entry content on header click
           entryHeader.addEventListener('click', () => {
             entryContent.style.display =
               entryContent.style.display === 'none' ? 'block' : 'none';
           });
 
-          catContent.appendChild(entryDiv);
+          contentEl.appendChild(entryDiv);
         });
+      } else {
+        // existing logic for daily.json and chaplain.json
+        data.forEach(category => {
+          const catDiv = document.createElement('div');
+          catDiv.classList.add('category');
 
-        catDiv.appendChild(catContent);
+          const catHeader = document.createElement('h2');
+          catHeader.textContent = category.category;
+          catHeader.classList.add('category-header');
+          catDiv.appendChild(catHeader);
 
-        // Toggle category content on header click
-        catHeader.addEventListener('click', () => {
-          catContent.style.display =
-            catContent.style.display === 'none' ? 'block' : 'none';
+          const catContent = document.createElement('div');
+          catContent.classList.add('category-content');
+          catContent.style.display = 'none';
+
+          category.entries.forEach(entry => {
+            const entryDiv = document.createElement('div');
+            entryDiv.classList.add('entry');
+
+            const entryHeader = document.createElement('h3');
+            entryHeader.textContent = entry.title;
+            entryHeader.classList.add('entry-header');
+            entryDiv.appendChild(entryHeader);
+
+            const entryContent = document.createElement('div');
+            entryContent.classList.add('entry-content');
+            entryContent.style.display = 'none';
+            entryContent.innerHTML = `
+              <p><strong>Prayer:</strong> ${entry.prayer}</p>
+              <p><strong>Devotional Question:</strong> ${entry.devotionalQuestion}</p>
+              <p><strong>Scripture (${entry.scriptureRef}, ESV):</strong> ${entry.verse}</p>
+            `;
+            entryDiv.appendChild(entryContent);
+
+            entryHeader.addEventListener('click', () => {
+              entryContent.style.display =
+                entryContent.style.display === 'none' ? 'block' : 'none';
+            });
+
+            catContent.appendChild(entryDiv);
+          });
+
+          catDiv.appendChild(catContent);
+
+          catHeader.addEventListener('click', () => {
+            catContent.style.display =
+              catContent.style.display === 'none' ? 'block' : 'none';
+          });
+
+          contentEl.appendChild(catDiv);
         });
-
-        contentEl.appendChild(catDiv);
-      });
+      }
     })
     .catch(err => {
       console.error(err);

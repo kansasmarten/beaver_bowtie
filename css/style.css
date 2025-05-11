@@ -1,3 +1,10 @@
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
 /* Base reset */
 * {
   margin: 0;
@@ -16,9 +23,24 @@ body {
 
 /* Container */
 .container {
+  width: 90%;
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
+}
+
+/* Responsive widths */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 1rem;
+  }
 }
 
 /* Header */
@@ -60,6 +82,7 @@ nav ul {
 
 /* Main content */
 main.container {
+  flex: 1 0 auto;
   background: #fff;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   border-radius: 8px;
@@ -181,4 +204,52 @@ em {
   margin-left: 1rem;
   border-left: 2px solid #eee;
   padding-left: 1rem;
+}
+
+
+/* Collects page styles */
+#collect-search {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 1.5rem auto;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.entry {
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+}
+
+.entry:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.entry-header {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.4rem;
+  color: #2a3d66;
+  background: #f7f7f7;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  margin: 0;
+}
+
+.entry-content {
+  padding: 1rem;
+  display: none;
+  background: #fff;
+}
+
+.entry-content p {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
 }
