@@ -14,14 +14,14 @@ document.addEventListener('DOMContentLoaded', () => {
           entryDiv.classList.add('entry');
 
           const entryHeader = document.createElement('h3');
-          entryHeader.textContent = collect.title;
+          entryHeader.textContent = collect.Title;
           entryHeader.classList.add('entry-header');
           entryDiv.appendChild(entryHeader);
 
           const entryContent = document.createElement('div');
           entryContent.classList.add('entry-content');
           entryContent.style.display = 'none';
-          entryContent.innerHTML = `<p>${collect.collect}</p>`;
+          entryContent.innerHTML = `<p>${collect.Collect}</p>`;
           entryDiv.appendChild(entryContent);
 
           entryHeader.addEventListener('click', () => {
